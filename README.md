@@ -27,7 +27,15 @@ docker build -t 3dgs_docker .
 ```
 
 ```shell
-docker run -it --name 3dgs_container --shm-size 32G --network host --gpus '"device=0"' -v $(pwd):/workdir -v /data:/data 3dgs_docker /bin/bash
+docker run -it \
+  --name 3dgs_container \
+  --shm-size 32G \
+  --network host \
+  --gpus '"device=0"' \
+  -v $(pwd):/workdir \
+  -v /data:/data \
+  3dgs_docker /bin/bash
+
 ```
 
 ```shell
