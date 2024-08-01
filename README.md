@@ -10,6 +10,8 @@ However, it now only supports ```train.py``` and ```render.py```, not ```convert
 
 Instead of using ```convert.py``` to get camera information, you can use other methods like the [nerfstudio](https://github.com/nerfstudio-project/nerfstudio/) or [DIM](https://github.com/3DOM-FBK/deep-image-matching).
 
+This repository is tested on only Ubuntu 22.04, not on Windows.
+
 ```shell
 git clone https://github.com/jhcha08/3DGS-Docker --recursive
 ```
