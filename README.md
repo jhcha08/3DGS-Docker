@@ -1,5 +1,41 @@
 # Dockerized Version of the 3D Gaussian Splatting for Real-Time Radiance Field Rendering
 
+This is the dockerized version of the 3DGS.
+
+I used the docker image from nvcr.io/nvidia/pytorch:22.06-py3 that supports python 3.8, torch 1.13.0, and cuda 11.7.
+
+Now, it only supports ```train.py``` and ```render.py```, not ```convert.py``` and SIBR viewer. I will fix this problem soon.
+
+```shell
+git clone https://github.com/jhcha08/3DGS-Docker --recursive
+```
+
+```shell
+docker pull nvcr.io/nvidia/pytorch:22.06-py3
+```
+
+```shell
+cd gaussian-splatting
+```
+
+```shell
+docker build -t 3dgs_docker .
+```
+
+```shell
+docker run -it --name 3dgs_container --shm-size 32G --network host --gpus '"device=0"' -v $(pwd):/workdir -v /data:/data 3dgs_docker /bin/bash
+```
+
+```shell
+pip install submodules/diff-gaussian-rasterization
+pip install submodules/simple-knn
+```
+
+```shell
+python train.py -s /workdir/path/to/your/colmap
+python render.py -m /workdir/output/result
+```
+
 -----
 
 # 3D Gaussian Splatting for Real-Time Radiance Field Rendering
