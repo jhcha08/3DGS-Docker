@@ -2,7 +2,9 @@
 
 This is the dockerized version of the 3DGS. It doesn't need the conda environment or other complex settings.
 
-I used the docker image from nvcr.io/nvidia/pytorch:22.06-py3 that supports python 3.8, torch 1.13.0, and cuda 11.7.
+In the ```Dockerfile```, I have set it up to install almost all the packages and libraries required to run the 3DGS code.
+
+I used the docker image from ```nvcr.io/nvidia/pytorch:22.06-py3``` that supports python 3.8, torch 1.13.0, and cuda 11.7.
 
 Now, it only supports ```train.py``` and ```render.py```, not ```convert.py``` and SIBR viewer. I will fix this problem soon.
 
