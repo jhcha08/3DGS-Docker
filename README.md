@@ -4,9 +4,9 @@ This is the dockerized version of the 3DGS. It doesn't need the conda environmen
 
 This repository used the docker image from ```nvcr.io/nvidia/pytorch:22.06-py3``` that supports python 3.8, torch 1.13.0, and cuda 11.7.
 
-In the ```Dockerfile```, there are setups to install almost all the packages and libraries required to run the 3DGS code.
+In the ```Dockerfile```, there are setups to install almost all the packages and libraries required to run the 3DGS.
 
-However, it now only supports ```train.py``` and ```render.py```, not ```convert.py``` and SIBR viewer. I will fix this problem soon.
+However, it now only supports ```train.py``` and ```render.py```, not ```convert.py``` and SIBR viewer.
 
 Instead of using ```convert.py``` to get camera information, you can use other methods like the [nerfstudio](https://github.com/nerfstudio-project/nerfstudio/) or [DIM](https://github.com/3DOM-FBK/deep-image-matching).
 
