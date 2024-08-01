@@ -8,7 +8,7 @@ I used the docker image from ```nvcr.io/nvidia/pytorch:22.06-py3``` that support
 
 Now, it only supports ```train.py``` and ```render.py```, not ```convert.py``` and SIBR viewer. I will fix this problem soon.
 
-Instead of using ```convert.py``` to get camera information, you can use other methods like the [nerfstudio](https://github.com/nerfstudio-project/nerfstudio/) or [Deep Image Matching](https://github.com/3DOM-FBK/deep-image-matching).
+Instead of using ```convert.py``` to get camera information, you can use other methods like the [nerfstudio](https://github.com/nerfstudio-project/nerfstudio/) or [DIM](https://github.com/3DOM-FBK/deep-image-matching).
 
 ```shell
 git clone https://github.com/jhcha08/3DGS-Docker --recursive
