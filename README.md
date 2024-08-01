@@ -2,7 +2,7 @@
 
 This is the dockerized version of the 3DGS. It doesn't need the conda environment or other complex settings.
 
-This repository used the docker image from ```nvcr.io/nvidia/pytorch:22.06-py3``` that supports python 3.8, torch 1.13.0, and cuda 11.7.
+This repository used the docker image that supports python 3.8, torch 1.13.0, and cuda 11.7.
 
 In the ```Dockerfile```, there are setups to install almost all the packages and libraries required to run the 3DGS.
 
