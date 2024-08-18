@@ -21,7 +21,7 @@ docker pull nvcr.io/nvidia/pytorch:22.06-py3
 ```
 
 ```shell
-cd gaussian-splatting
+cd 3DGS-Docker
 ```
 
 ```shell
