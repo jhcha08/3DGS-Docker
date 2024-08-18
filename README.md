@@ -35,7 +35,6 @@ docker run -it \
   --network host \
   --gpus '"device=0"' \
   -v $(pwd):/workdir \
-  -v /data:/data \
   3dgs_docker /bin/bash
 
 ```
